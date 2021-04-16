@@ -8,7 +8,7 @@
 
 " {{{1 The Beginning
 
-if &compatible || !executable('enchant') || exists('g:loaded_vimchant')
+if !executable('enchant-2') || exists('g:loaded_vimchant')
 	finish
 endif
 

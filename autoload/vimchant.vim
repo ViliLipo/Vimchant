@@ -8,14 +8,11 @@
 
 " {{{1 The Beginning
 
-if &compatible
-	finish
-endif
 
 let s:save_cpo = &cpo
 set cpo&vim
 
-let s:spellcheck_prg = 'enchant -l'
+let s:spellcheck_prg = 'enchant-2 -l'
 
 if !hlexists('SpellBad')
 	highlight SpellBad term=reverse ctermbg=1 gui=undercurl guisp=Red
